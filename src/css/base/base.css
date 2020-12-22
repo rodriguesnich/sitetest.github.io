@@ -12,6 +12,10 @@ nav {
 nav .nav-wrapper {
   background-color: var(--azul) !important;
 }
+
+nav .nav-wrapper ul li a{
+  font-weight: 500;
+}
 nav .nav-wrapper .brand-logo img {
   height: 45px;
 }
@@ -24,6 +28,21 @@ nav .nav-wrapper .brand-logo img {
   width: 100%;
   height: 56.25vw;
 }
+
+.caroussel-video .title h1{
+  color: white;
+  position: absolute;
+  top: 12vh;
+  left: 6.5vw;
+}
+.caroussel-video .title h2{
+  color: white;
+  position: absolute;
+  font-size: 1.7rem;
+  top: 32vh;
+  left: 6.5vw;
+}
+
 
 .linha_horizontal {
   margin-left: 10% !important;
@@ -62,8 +81,10 @@ nav .nav-wrapper .brand-logo img {
   text-align: center;
   padding-top: 5px;
 }
-
-.title h1 {
+.title1 {
+  text-align: center; 
+}
+.title h1, .title1 h1{
   font-size: 2.8rem;
   font-weight: bold;
   /* font-size: 2.5rem; */
@@ -87,10 +108,11 @@ nav .nav-wrapper .brand-logo img {
   padding: 1rem !important;
 }
 
-.cards-tittle {
+.cards-title {
   font-weight: bold;
   margin: 0;
   margin-bottom: 5px;
+  font-size: 1.6rem;
 }
 
 .cards-resume {
@@ -100,6 +122,39 @@ nav .nav-wrapper .brand-logo img {
 
 .cards-text {
   text-align: justify;
+}
+
+.page-footer{
+  background-color: var(--azul) !important;
+}
+
+.page-footer #footer-title{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.page-footer .container .contato a{
+  transition: .3s;
+}
+
+.page-footer .container ul li a{
+  font-size: 1.8rem;
+  padding-right: 0.7rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+
+
+
+#instagram:hover{
+  color: #F44747 !important;
+}
+#twitter:hover{
+  color: #1DA1F2 !important;
+}
+#facebook:hover{
+  color: #147cf4 !important;
 }
 
 @media only screen and (min-width: 993px) {
