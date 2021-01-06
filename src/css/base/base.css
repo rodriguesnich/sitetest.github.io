@@ -1,37 +1,56 @@
 @import url(_variable.css);
 /* @import url(reset.css); */
 
-body {
+body{
   /* font-family: var(--familia-corpo); */
 }
 
-nav {
+/* Nav-Bar */
+nav{
   height: 75px !important;
   line-height: 75px !important;
 }
 nav .nav-wrapper {
   background-color: var(--azul) !important;
 }
-
 nav .nav-wrapper ul li a{
   font-weight: 500;
 }
 nav .nav-wrapper .brand-logo img {
   height: 45px;
 }
-
 #links li a {
   font-size: large;
 }
+/* --- Nav-Bar END */
 
-.caroussel-video video {
-  width: 100%;
+
+/* Video Carousel */
+.content {
+  position: relative;
+  margin: 0;
+  padding: 0;
   height: 56.25vw;
-}
 
+}
+.content:before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.content video {
+  display: block;
+  height: 56.25vw;
+  padding: 10;
+}
 .caroussel-video .title h1{
   color: white;
   position: absolute;
+  font-size: 3.6rem;
   top: 12vh;
   left: 6.5vw;
 }
@@ -42,8 +61,11 @@ nav .nav-wrapper .brand-logo img {
   top: 32vh;
   left: 6.5vw;
 }
+/* Video Carousel END */
 
 
+
+/* Linha Horizontal */
 .linha_horizontal {
   margin-left: 10% !important;
   margin-right: 10% !important;
@@ -77,6 +99,10 @@ nav .nav-wrapper .brand-logo img {
   height: 45px;
   vertical-align: middle;
 }
+/* Linha Horizontal END */
+
+
+/* Cards */
 .title {
   text-align: center;
   padding-top: 5px;
@@ -95,58 +121,50 @@ nav .nav-wrapper .brand-logo img {
   color: var(--cinza-medio);
   margin-top: -2%;
 }
-
 .cards {
   background-color: var(--cinza-claro);
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-
 .card-content {
   text-align: center;
   padding: 1rem !important;
 }
-
 .cards-title {
   font-weight: bold;
   margin: 0;
   margin-bottom: 5px;
   font-size: 1.6rem;
 }
-
 .cards-resume {
   /* font-weight: bold; */
   margin: 0.4rem !important;
 }
-
 .cards-text {
   text-align: justify;
 }
+/* Cards END */
 
+
+
+/* Footer */
 .page-footer{
   background-color: var(--azul) !important;
 }
-
 .page-footer #footer-title{
   font-size: 1.4rem;
   font-weight: 500;
 }
-
 .page-footer .container .contato a{
   transition: .3s;
 }
-
 .page-footer .container ul li a{
   font-size: 1.8rem;
   padding-right: 0.7rem;
   transition: 0.3s;
   text-decoration: none;
 }
-
-
-
-
 #instagram:hover{
   color: #F44747 !important;
 }
@@ -156,18 +174,16 @@ nav .nav-wrapper .brand-logo img {
 #facebook:hover{
   color: #147cf4 !important;
 }
+/* Footer END*/
+
+
 
 @media only screen and (min-width: 993px) {
-  .brand-logo {
+  .brand-logo{
     padding-top: 0.7% !important;
     margin-left: 15% !important;
   }
-
-  #links {
+  #links{
     margin-right: 15% !important;
   }
 }
-/* .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
-} */
