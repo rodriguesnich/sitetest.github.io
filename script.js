@@ -3,17 +3,16 @@
     var instances = M.Carousel.init(elems, options);
   });*/
 
-//document.getElementById("myVideo").autoplay;
-
-$(document).ready(function(){
-  $('.tooltipped').tooltip();
-});
-
+var scroll_pos = 0;
 $(document).ready(function(){       
-  var scroll_pos = 0;
   $(document).scroll(function() {
       scroll_pos = $(this).scrollTop();
-      if(scroll_pos > 50) {
+      if(scroll_pos > 50){
+          $('#logo').attr('src','src/img/logo.png');
+          var img = document.getElementById('logo');
+          if(img && img.style) {
+              img.style.height = '3vw';
+          }
           $('.nav-wrapper')[0].style.setProperty('background-color', '#004d6e', 'important');
           $('.nav-wrapper')[0].style.setProperty('height', '75px', 'important');
           $('.nav-wrapper')[0].style.setProperty('line-height', '75px', 'important');
@@ -22,7 +21,9 @@ $(document).ready(function(){
           //Cor
           $('#item1')[0].style.setProperty('color', 'white', 'important');          
           $('#item2')[0].style.setProperty('color', 'white', 'important');
-          $('#item3')[0].style.setProperty('color', 'white', 'important');
+          $('#item3')[0].style.setProperty('color', 'white', 'important');      
+
+
           //Peso
           $('#item1')[0].style.setProperty('font-weight', 'bolder', 'important');
           $('#item2')[0].style.setProperty('font-weight', 'bolder', 'important');
@@ -31,8 +32,12 @@ $(document).ready(function(){
           $('#item1')[0].style.setProperty('font-size', '1.2rem', 'important');
           $('#item2')[0].style.setProperty('font-size', '1.2rem', 'important');
           $('#item3')[0].style.setProperty('font-size', '1.2rem', 'important');
-
-      } else {
+      }else{
+          $('#logo').attr('src','src/img/logo_colorida.png');
+          var img = document.getElementById('logo');
+          if(img && img.style) {
+              img.style.height = '3.27vw';
+          }
           $('.nav-wrapper')[0].style.setProperty('background-color', 'white', 'important');
           $('.nav-wrapper')[0].style.setProperty('height', '90px', 'important');
           $('.nav-wrapper')[0].style.setProperty('line-height', '90px', 'important');
