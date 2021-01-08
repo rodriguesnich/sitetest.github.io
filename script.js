@@ -3,6 +3,11 @@
     var instances = M.Carousel.init(elems, options);
   });*/
 
+$(document).ready(function(){
+  $('.carousel').carousel();
+});
+
+
 var scroll_pos = 0;
 $(document).ready(function(){       
   $(document).scroll(function() {

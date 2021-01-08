@@ -140,7 +140,7 @@ nav .nav-wrapper .brand-logo img {
   vertical-align: middle;
   position: relative;
   width: 50%;
-  border-top-style: solid;
+  border-top: 1px solid;
 }
 .linha_horizontal:before {
   right: 0.5em;
@@ -163,6 +163,11 @@ nav .nav-wrapper .brand-logo img {
   font-size: 2.4rem;
   font-weight: bold; 
   padding-top: 2%;
+}
+.title2 h1{
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold; 
 }
 .title1 h2 {
   font-weight: normal;
