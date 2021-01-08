@@ -1,7 +1,7 @@
 @import url(_variable.css);
 /* @import url(reset.css); */
 
-html, body {
+html, body{
   max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -14,14 +14,11 @@ nav{
   z-index: 99;
   transition: 0.4s;
 }
-nav .nav-wrapper {
-  background-color: var(--azul) !important;
-  transition: 0.4s;
-  line-height: 90px !important;
-  height: 90px !important;
-  background-color: white !important;
-}
 
+
+nav .nav-wrapper ul li{
+  padding-left: 20px !important;
+}
 nav .nav-wrapper ul li a{
   font-size: large;
   color: var(--azul) !important;
@@ -29,12 +26,6 @@ nav .nav-wrapper ul li a{
   font-size: 1.3rem !important;
   transition: 0.4s;
   margin-top: 1px !important;
-}
-nav .nav-wrapper ul li{
-  padding-left: 20px !important;
-}
-
-nav .nav-wrapper ul li a{
   border-top: 3px solid transparent;
   padding: 0 !important;
 }
@@ -46,10 +37,6 @@ nav .nav-wrapper ul li a:hover{
 
 nav .nav-wrapper ul li a:active{
   border-top: 3px solid #449dd1 !important;
-}
-
-nav .nav-wrapper .brand-logo img {
-  height: 45px;
 }
 
 
@@ -102,18 +89,18 @@ nav .nav-wrapper .brand-logo img {
   scroll-margin-block-end: 0;
   background-size: cover;
 }
-.caroussel-video .title{
+.carousel-video .title{
   position: absolute;
   top: 50px;
   left: 60px;
   text-align: left;
 }
 
-.caroussel-video .title h1{
+.carousel-video .title h1{
   color: white;
   font-size: 3.6em;
 }
-.caroussel-video .title h2{
+.carousel-video .title h2{
   color: white;
   font-size: 1.7em;
 }
@@ -169,6 +156,7 @@ nav .nav-wrapper .brand-logo img {
   font-size: 2.4rem;
   font-weight: bold; 
 }
+
 .title1 h2 {
   font-weight: normal;
   font-size: 2.3rem;
@@ -241,4 +229,24 @@ nav .nav-wrapper .brand-logo img {
   #links{
     margin-right: 15% !important;
   }
+  nav .nav-wrapper {
+    transition: 0.4s;
+    line-height: 90px !important;
+    height: 90px !important;
+    background-color: white !important;
+  }
+  nav .nav-wrapper .brand-logo img {
+    height: 45px;
+  }
 }
+
+@media only screen and (max-width: 992px) {
+  nav .nav-wrapper {
+    background-color: var(--azul) !important;
+  }
+  nav .nav-wrapper .brand-logo img {
+    height: 25px;
+  }
+}
+
+
