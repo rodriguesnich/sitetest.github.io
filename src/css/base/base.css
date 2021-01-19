@@ -149,7 +149,7 @@ nav .nav-wrapper ul li a:active{
   text-align: center;
   font-size: 2.4rem;
   font-weight: bold; 
-  padding-top: 2%;
+  padding-top: 5%;
 }
 .title2 h1{
   text-align: center;
@@ -247,6 +247,40 @@ nav .nav-wrapper ul li a:active{
   nav .nav-wrapper .brand-logo img {
     height: 25px;
   }
+
+  .carousel-video .content .title{
+    left: 20px;
+  }
+
+  .carousel-video .content .title h1{
+    font-size: 2rem;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  .carousel-video .content .title h2{
+    font-size: 1.1rem;
+    margin-top: -5%;
+  }
+
+  .linha_horizontal img{
+    height: 25px;
+  }
+  .title1 h1{
+    padding-top: 6%;
+  }
+
+  #clientes h1{
+    font-size: 2rem;
+  }
 }
 
+
+@media only screen and (max-width: 560px) {
+  .carousel-video .content .title h1{
+    margin-top: -5% !important;
+  }
+  .linha_horizontal{
+    margin-top: 15% !important;
+  }
+}
 

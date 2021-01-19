@@ -10,6 +10,13 @@ $(document).ready(function(){
   $('.carousel').carousel();
 });
 
+ScrollReveal().reveal('.linha_horizontal', {delay:600});
+ScrollReveal().reveal('.title', {delay:600});
+
+ScrollReveal().reveal('.container', {delay:600});
+ScrollReveal().reveal('.carousel', {delay:600});
+
+
 if(screen.width > 992){
   var scroll_pos = 0;
   $(document).ready(function(){       
