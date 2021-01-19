@@ -1,13 +1,18 @@
-/*document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
-  });*/
+
 $(document).ready(function(){
-  $('.sidenav').sidenav();
+    $('.sidenav')
+      .sidenav()
+      .on('click tap', 'li a', () => {
+          $('.sidenav').sidenav('close');
+    });
 });
 
 $(document).ready(function(){
   $('.carousel').carousel();
+});
+
+$(document).ready(function(){
+  $('.parallax').parallax();
 });
 
 ScrollReveal().reveal('.linha_horizontal', {delay:600});
